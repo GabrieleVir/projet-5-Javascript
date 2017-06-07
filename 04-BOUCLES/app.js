@@ -1,6 +1,6 @@
 //Exercices 1: Pair et impair.
 
-for (var i = 0; i < 21; i++) {
+for (var i = 0; i <= 20; i++) {
 	var moduloI = i%2;
 	if (moduloI === 0) {
 		console.log(i + ' est pair.');
@@ -11,37 +11,38 @@ for (var i = 0; i < 21; i++) {
 
 //Exercice 2: Multiplication Tables
 
-for(var i = 0; i < 11; i++) {
-	var neuf = 9;
-	console.log (i + '*' + neuf + '= ' + (i * neuf));
+for(var i = 0; i <= 10; i++) {
+	console.log (i + '*' + 9 + '= ' + (i * 9));
 }
 
 //Exerice 3: assigner des grades
 
 var note = function(a) {
-	var msgGrade = "Vous avez le grade ";
-	var grade = '';
-	for(var i = 0; i < 101; i++) {
-		
-		if(a > 90) {
-			grade = 'A';
-			return msgGrade + grade;
-		}else if(a > 80) {
-			grade = 'B';
-			return msgGrade + grade;
-		}else if(a > 70) {
-			grade = 'C';
-			return msgGrade + grade;
-		}else if(a > 65) {
-			grade = 'D';
-			return msgGrade + grade;
-		}else {
-			grade = 'F';
-			return msgGrade + grade;
-		}
-				
-	}
+	return a;
 }
+var msgGrade = "Vous avez le grade ";
+var grade = '';
+for(var i = 0; i <= 100; i++) {
+	
+	if(note(i) > 90) {
+		grade = 'A';
+		console.log(msgGrade + grade);
+	}else if(note(i) > 80) {
+		grade = 'B';
+		console.log(msgGrade + grade);
+	}else if(note(i) > 70) {
+		grade = 'C';
+		console.log(msgGrade + grade);
+	}else if(note(i) > 65) {
+		grade = 'D';
+		console.log(msgGrade + grade);
+	}else {
+		grade = 'F';
+		console.log(msgGrade + grade);
+	}
+				
+}
+
 
 //Exercice 4: pyramide
 for(var i = 0; i < 4; i++) {
